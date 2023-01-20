@@ -16,8 +16,8 @@ running `npm run dev`.
 
 ## Perform a CSRF Attack
 
-You already performed a CSRF attack in the XSS attack exercise. Let's recreate it, and look at it from a
-CSRF lens.
+You already performed a CSRF attack in the XSS attack exercise. Let's recreate
+it, and look at it from a CSRF lens.
 
 Navigate to the frontend of the real application [http://localhost:5001].
 
@@ -59,8 +59,8 @@ protection by setting the `XSRF-Token` cookie to the CSRF token.
 
 Take a look at the frontend JavaScript files in the __real-app/frontend/js__
 folder, specifically the __home.js__, __login.js__, __nav.js__, and
-__tweet-form.js__ files. All those files have a section for
-`Pass CSRF Protection`. This is sets the `XSRF-Token` header to the value of the
+__tweet-form.js__ files. All those files have a section for `Pass CSRF
+Protection`. This is sets the `XSRF-Token` header to the value of the
 `XSRF-Token` cookie.
 
 Now, try to submit a tweet in the real application while logged in as the
@@ -70,7 +70,7 @@ Then, try to submit a tweet in the malicious application using the `DemoUser`'s
 credentials. It should now be unsuccessful.
 
 So even though the real application is prone to an XSS attack, it will not allow
-a malicious application to act maliciously on behalf of a user because the
-real application is properly preventing CSRF attacks.
+a malicious application to act maliciously on behalf of a user because the real
+application is properly preventing CSRF attacks.
 
 [http://localhost:5001]: http://localhost:5001
